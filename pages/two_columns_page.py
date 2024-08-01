@@ -5,7 +5,7 @@ from controllers import users_controllers
 
 register_page(
     __name__,
-    path="/",
+    path="/temp_1",
 )
 
 

@@ -5,7 +5,7 @@ from controllers import users_controllers
 
 register_page(
     __name__,
-    path="/",
+    path="/temp_3",
 )
 
 
@@ -18,10 +18,10 @@ def layout(**kwargs):
 
         return dbc.Row(
             [
-                dbc.Col(className="adaptive-hide adaptive-width", width=3),
-                dbc.Col(["Колонка 1"], md=3, xs=6, class_name="adaptive-width"),
-                dbc.Col(["Колонка 2"], md=3, xs=6, class_name="adaptive-width"),
-                dbc.Col(className="adaptive-hide", width=3),
+                dbc.Col(className="adaptive-hide adaptive-width", width=1),
+                dbc.Col(["Колонка 1"], width=3, class_name="m-1 p-1 adaptive-width"),
+                dbc.Col(["Колонка 2"], md=3, xs=6, class_name="m-1 p-1 adaptive-width"),
+                dbc.Col(className="adaptive-hide", width=1),
             ],
             style={"paddingTop": "33dvh"},
             class_name="adaptive-block",
